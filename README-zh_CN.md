@@ -5,7 +5,7 @@
 ## 📦 BUILD
 ### 服务端
 ```shell script
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server server/main.go 
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server-linux server/main.go 
 ```
 
 ### 客户端
@@ -20,7 +20,7 @@ go build -o docker client/main.go
 ### 服务端
 将server拷贝到装有docker的机器上
 ```shell script
-nohup server -p 50000 &
+nohup server-linux -p 50000 &
 ```
 ### 客户端
 #### \> 设置环境变量 DOCKER_REMOTE_SERVER 指向服务端所在的IP和端口

@@ -5,7 +5,7 @@
 ## 📦 Build
 ### Server
 ```shell script
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server server/main.go 
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server-liunx server/main.go 
 ```
 
 ### Client
@@ -19,7 +19,7 @@ Of course, you can also name it another , but please change it to the name you n
 ### Server
 Copy the "server" to the machine with docker
 ```shell script
-nohup server -p 50000 &
+nohup server-liunx -p 50000 &
 ```
 ### Client
 #### \> Set the environment variable : DOCKER_REMOTE_SERVER , point to the IP and port where the server is located
