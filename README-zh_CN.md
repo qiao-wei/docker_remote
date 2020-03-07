@@ -1,5 +1,7 @@
 # docker_remote
 
+[English](https://github.com/jivi20029/docker_remote/blob/master/README.md) [简体中文](https://github.com/jivi20029/docker_remote/blob/master/README-zh_CN.md) 
+
 ## 📦 BUILD
 ### 服务端
 ```shell script

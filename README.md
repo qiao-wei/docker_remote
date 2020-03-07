@@ -1,6 +1,8 @@
 # docker_remote
 
-## 📦 BUILD
+[简体中文](https://github.com/jivi20029/docker_remote/blob/master/README-zh_CN.md) [English](https://github.com/jivi20029/docker_remote/blob/master/README.md)
+
+## 📦 Build
 ### Server
 ```shell script
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server server/main.go 
