@@ -2,6 +2,19 @@
 
 [简体中文](https://github.com/jivi20029/docker_remote/blob/master/README-zh_CN.md) [English](https://github.com/jivi20029/docker_remote/blob/master/README.md)
 
+## 📦 Why do this ?
+My program need to docker build first ,and then push to the harbor, last deployment with k8s.
+
+But the hard disk of my local machine is too small. so I don't want to install docker in local, 
+so I need to send the program to the remote machine with docker,and then execute the script.
+It is so complex. 
+
+So I think that if all this can be done directly locally. Kubectl can operate remote machines directly locally,
+But docker cant do that , so I want to implement one .  
+
+###  📦 Why not use the docker api ?   
+too complex !
+
 ## 📦 Build
 ### Server
 ```shell script
@@ -22,7 +35,7 @@ Copy the "server" to the machine with docker
 nohup server-liunx -p 50000 &
 ```
 ### Client
-#### \> Set the environment variable : DOCKER_REMOTE_SERVER , point to the IP and port where the server is located
+#### \> Set the environment variable : DOCKER_REMOTE_SERVER , point to the IP and port of the server  
 
 * linux mac osx
 ```shell script
