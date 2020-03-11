@@ -77,7 +77,7 @@ In fact, it's the docker command, such as viewing all the image lists
 docker images 
 ```
 
-If the prompt command not find in work directory, you can type
+If prompt "command not find" in work directory, you can type
 ```shell script
 ./docker 
 ```
